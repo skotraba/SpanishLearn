@@ -3,30 +3,31 @@
 :root {
     --color1:rgb(226, 151, 52);
     --color2:rgb(30, 199, 143);
-    --color3:rgb(245, 45, 45);
-    --color4:rgb(133, 59, 230);
+    --color3:rgb(243, 41, 26);
+    --color4:rgb(148, 72, 247);
 }
 
-* {
-    margin: 0;
-}
 
-body {
-    
+
+ body {
+    margin: 0px;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
     background-color: var(--color1);
-    font-family: 'Lato',sans-serif;
-    font-size: 18px;
-  
+    overflow-x: hidden;
 }
+  
+ 
 
 .mycontainer {
     text-align: center;
-    padding: 8vw;
-
+    margin: .5em;
 }
 
 .mycontainer h1 {
     padding-bottom: 10vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
  
@@ -38,8 +39,7 @@ body {
     background-color: black;
     align-items: flex-end;
     justify-content: flex-end;
-    
-    
+   
 }
 
 
@@ -50,7 +50,7 @@ body {
 
 .navbar ul li {
     float: left;
-    width: 20vw;
+   
     height: 40px;
     background-color: rgba(0, 0,0,0.8);
     line-height: 40px;
@@ -64,6 +64,7 @@ body {
     color: white;
     text-decoration: none;
     display: block;
+    padding: 5px;
 }
 
 .navbar ul li a:hover {
@@ -88,6 +89,7 @@ body {
 
 .section1 {
     background-image: url('image/spain.jpg');
+  
     height: 80vh;
     background-size: cover;
     background-position: center;
@@ -146,9 +148,10 @@ body {
 
 .myflex {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly;
     align-items: center;
-    width: 100%;
+    flex-wrap: wrap ;
+    flex-direction: row;
 }
 
 .section3 ul li {
@@ -156,11 +159,11 @@ body {
     list-style: circle;
     list-style-position: inside;
     font-size: 16px;
-    
+
 }
 
 .section3 img {
-    width: 50vw; 
+   max-width: 60vw;
 }
 
 
@@ -190,23 +193,13 @@ body {
 
 
 
-/* Mobile */
+/* Mobile */ 
 
-@media screen and (max-width: 600px) {
-    .mycontainer {
-        width: 90%;
+ @media screen and (max-: 600) {
+    html {
+        min-width: 100%;
     }
-
-    .section1 {
-        width: 100%;
-    }
-
-    .section2 {
-        width: 100%;
-    }
-
-    body{
-        width: 100%;
-        
+    body {
+        min-width: 100%;
     }
 }

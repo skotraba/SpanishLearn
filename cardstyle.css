@@ -5,8 +5,8 @@
 .cards {
     perspective: 1000px;
     position: relative;
-    height: 300px;
-    width: 500px;
+    height: 40vh;
+    width: 50vw;
     max-width: 100%;
 }
 
